@@ -7,6 +7,7 @@ export default class VideoDetail extends React.Component{
 
     render(){
         const videoSource = this.state.video ? this.state.video.id.videoId : '';
+        console.log(this.state.video);
         return(
             <div className='ui segment' style={{width: '55%'}}>
                 <div className='ui embed'>

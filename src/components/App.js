@@ -2,6 +2,7 @@ import React from 'react';
 import SearchBar from './SearchBar';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
+import AdvancedSettings from './AdvancedSettings';
 import youtube from '../api/youtube';
 
 class App extends React.Component{
@@ -10,18 +11,35 @@ class App extends React.Component{
         this.state = {
             videos: [],
             currentVideo: null,
+
+            channelType: 'any', // any, show
+            videoDefinition: 'any', //any high standard
+            videoDuration: 'any', //any long medium short
         };
 
         this.videoRef = React.createRef();
     }
 
+    onSelectorChange = (detailType, newVal) => {
+        if(detailType === "channelType"){
+            this.setState({channelType: newVal});
+        } else if(detailType === "videoDefinition"){
+            this.setState({videoDefinition: newVal});
+        } else if(detailType === "videoDuration"){
+            this.setState({videoDuration: newVal});
+        }
+    };
+
     onSearchSubmit = (userText) => {
         youtube.get('/search', {
             params: {
+                part: 'snippet',
                 q: userText,
+                //channelType: this.advancedRef.current.state.channelType,
+                //videoDefinition: this.advancedRef.current.state.videoDefinition,
+                //videoDuration: this.advancedRef.current.state.videoDuration,
             }
         }).then((response) => {
-            console.log(response);
             this.setState({videos: response.data.items})
         });
     };
@@ -36,7 +54,7 @@ class App extends React.Component{
         return(
             <div style={{width: '90%', marginLeft: '5%', marginTop: '40px'}}>
                 <SearchBar onSearchSubmit={this.onSearchSubmit} />
-
+                <AdvancedSettings onSelectorChange={this.onSelectorChange}/>
                 <h4>{this.state.videos.length} videos found</h4>
                 <div className='ui container' style={{
                     width: '100%',
