@@ -1,8 +1,8 @@
 import React from 'react';
-import SearchBar from './SearchBar';
-import VideoList from './VideoList';
-import VideoDetail from './VideoDetail';
-import AdvancedSettings from './AdvancedSettings';
+import SearchBar from './search-bar/SearchBar';
+import VideoList from './video/VideoList';
+import VideoDetail from './video/VideoDetail';
+import AdvancedSettings from './search-bar/advanced-search-settings/AdvancedSettings';
 import youtube from '../api/youtube';
 
 class App extends React.Component{
