@@ -12,14 +12,26 @@ export default class ChannelSelector extends React.Component{
 
     render(){
         return(
-            <div>
-                <input type="radio" name="channel" value="any"
-                       checked={this.state.selected === 'any'}
-                       onChange={this.onRadioChange}/>Any<br/>
-
-                <input type="radio" name="channel" value="show"
-                       checked={this.state.selected === 'show'}
-                       onChange={this.onRadioChange}/>Show
+            <div className="ui form" style={{display: "inline-block", margin: "10px"}}>
+                <div className="grouped fields">
+                    <label>Channel</label>
+                    <div className="field">
+                        <div className="ui slider checkbox">
+                            <input type="radio" name="channel" value="any"
+                                   checked={this.state.selected === 'any'}
+                                   onChange={this.onRadioChange}/>
+                            <label>Any</label>
+                        </div>
+                    </div>
+                    <div className="field">
+                        <div className="ui slider checkbox">
+                            <input type="radio" name="channel" value="show"
+                                   checked={this.state.selected === 'show'}
+                                   onChange={this.onRadioChange}/>
+                            <label>Show</label>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

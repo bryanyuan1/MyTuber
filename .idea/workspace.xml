@@ -10,15 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acacbe4d-70b0-479b-9f1b-6fa145f5947a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/AdvancedSettings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/advanced-search-settings/AdvancedSettings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ChannelSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/advanced-search-settings/ChannelSelector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DefinitionSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/advanced-search-settings/DefinitionSelector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DurationSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/advanced-search-settings/DurationSelector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-bar/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/video/VideoDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/video/VideoItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/video/VideoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/AdvancedSettings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/AdvancedSettings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/ChannelSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/ChannelSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/DefinitionSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/DefinitionSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/DurationSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/DurationSelector.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,58 +26,50 @@
     <session id="865674828">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="VideoDetail" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="24" />
+          <entry key="js" value="26" />
           <entry key="ts" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JavaScript" value="25" />
+          <entry key="JavaScript" value="27" />
           <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="1" />
-          <entry key="js" value="7105" />
+          <entry key="js" value="8211" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JavaScript" value="7105" />
+          <entry key="JavaScript" value="8211" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="6" />
+          <entry key="ESLintLanguageService" value="9" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/search-bar/SearchBar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/api/youtube.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,20 +79,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
+            <state relative-caret-position="-90">
               <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/advanced-search-settings/AdvancedSettings.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/AdvancedSettings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+            <state relative-caret-position="-9">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -113,28 +101,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/advanced-search-settings/DurationSelector.js">
+        <entry file="file://$PROJECT_DIR$/src/components/search-bar/SearchBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            <state relative-caret-position="216">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/advanced-search-settings/DefinitionSelector.js">
+        <entry file="file://$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/DurationSelector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="144">
+              <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/advanced-search-settings/ChannelSelector.js">
+        <entry file="file://$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/DefinitionSelector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="81">
+              <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/ChannelSelector.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -192,6 +189,11 @@
         <option value="$PROJECT_DIR$/src/components/DurationSelector.js" />
         <option value="$PROJECT_DIR$/src/components/AdvancedSettings.js" />
         <option value="$PROJECT_DIR$/src/components/App.js" />
+        <option value="$PROJECT_DIR$/src/test.js" />
+        <option value="$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/DurationSelector.js" />
+        <option value="$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/DefinitionSelector.js" />
+        <option value="$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/ChannelSelector.js" />
+        <option value="$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/AdvancedSettings.js" />
       </list>
     </option>
   </component>
@@ -241,13 +243,22 @@
               <item name="youtube-video-player" type="b2602c69:ProjectViewProjectNode" />
               <item name="youtube-video-player" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="youtube-video-player" type="b2602c69:ProjectViewProjectNode" />
               <item name="youtube-video-player" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="search-bar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youtube-video-player" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youtube-video-player" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="search-bar" type="462c0819:PsiDirectoryNode" />
+              <item name="advanced-search-settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,12 +310,15 @@
       <workItem from="1554416170318" duration="5841000" />
       <workItem from="1554743366938" duration="8022000" />
       <workItem from="1554933534716" duration="6956000" />
-      <workItem from="1555094640618" duration="260000" />
+      <workItem from="1555094640618" duration="352000" />
+      <workItem from="1555206209231" duration="1110000" />
+      <workItem from="1555394645822" duration="2070000" />
+      <workItem from="1555453063538" duration="4042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24602000" />
+    <option name="totallyTimeSpent" value="31916000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,7 +333,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21648793" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22453083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -331,8 +345,8 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49798927" visible="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5020107" side_tool="true" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49597856" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50402147" side_tool="true" visible="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -368,13 +382,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/search-bar/SearchBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.js" />
     <entry file="file://$PROJECT_DIR$/src/api/youtube.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -406,41 +414,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/advanced-search-settings/AdvancedSettings.js">
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/DefinitionSelector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/ChannelSelector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search-bar/SearchBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/DurationSelector.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+          <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search-bar/advanced-search-settings/AdvancedSettings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/advanced-search-settings/ChannelSelector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/advanced-search-settings/DefinitionSelector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/advanced-search-settings/DurationSelector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>
