@@ -41,8 +41,10 @@ export default class HistoryBoard extends React.Component{
                      marginTop: '0',
                      width: '35%',
                      marginLeft: '5%',
-                     maxHeight: "160px",
+                     maxHeight: "170px",
+                     padding: "14px"
                  }}>
+                <h4>History</h4>
                 {HistoryItems}
             </div>
         )
