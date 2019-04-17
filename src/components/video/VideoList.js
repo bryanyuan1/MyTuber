@@ -2,9 +2,11 @@ import React from 'react';
 import VideoItem from './VideoItem';
 
 const VideoList = (props) => {
+    let key = 0;
+
     const videoList = props.videos.map((video) => {
         return (
-            <VideoItem key={video.id.videoId}
+            <VideoItem key={++key}
                        video={video}
                        onItemClick={(video) => {
                            props.onItemClick(video);

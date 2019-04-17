@@ -6,6 +6,8 @@ export default class HistoryBoard extends React.Component{
         searchTexts: ["asdf","jg"],
     };
 
+    key = 0;
+
     onItemDelete = (searchText) => {
         let newTexts = this.state.searchTexts;
         for(var i = 0; i < this.state.searchTexts.length; i++) {
@@ -27,7 +29,7 @@ export default class HistoryBoard extends React.Component{
         const HistoryItems = this.state.searchTexts.map((element) => {
             return(
                 <HistoryItem searchText={element}
-                             key={element}
+                             key={++this.key}
                              onItemSearch={this.onItemSearch}
                              onItemDelete={this.onItemDelete}/>
             )
@@ -36,10 +38,10 @@ export default class HistoryBoard extends React.Component{
             <div className="ui segments"
                  style={{
                      overflow: "auto",
-                     display: this.state.searchTexts.length === 0 ? "none" : "inline-block",
                      marginTop: '0',
                      width: '35%',
                      marginLeft: '5%',
+                     maxHeight: "160px",
                  }}>
                 {HistoryItems}
             </div>

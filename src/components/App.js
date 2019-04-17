@@ -42,13 +42,13 @@ class App extends React.Component{
                 //videoDuration: this.advancedRef.current.state.videoDuration,
             }
         }).then((response) => {
+            console.log(response);
             this.setState({videos: response.data.items})
         });
 
-        let history = this.historyRef.current.state.searchTexts;
         // concatenate the list
-        history = [userText, ...history];
-        this.historyRef.current.setState({searchTexts: history});
+        let newHistory = [userText, ...this.historyRef.current.state.searchTexts];
+        this.historyRef.current.setState({searchTexts: newHistory});
     };
 
     onItemClick = (video) => {
@@ -68,7 +68,9 @@ class App extends React.Component{
 
                     <HistoryBoard onSearchSubmit={this.onSearchSubmit}
                                   ref={this.historyRef}
-                                  style={{display: 'inline-block'}}
+                                  style={{
+                                      display: 'inline-block',
+                                  }}
                     />
                 </div>
 
