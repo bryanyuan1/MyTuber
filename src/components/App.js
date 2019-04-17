@@ -3,6 +3,7 @@ import SearchBar from './search-bar/SearchBar';
 import VideoList from './video/VideoList';
 import VideoDetail from './video/VideoDetail';
 import AdvancedSettings from './search-bar/advanced-search-settings/AdvancedSettings';
+import HistoryBoard from './search-bar/search-history/HistoryBoard';
 import youtube from '../api/youtube';
 
 class App extends React.Component{
@@ -18,6 +19,7 @@ class App extends React.Component{
         };
 
         this.videoRef = React.createRef();
+        this.historyRef = React.createRef();
     }
 
     onSelectorChange = (detailType, newVal) => {
@@ -42,6 +44,11 @@ class App extends React.Component{
         }).then((response) => {
             this.setState({videos: response.data.items})
         });
+
+        let history = this.historyRef.current.state.searchTexts;
+        // concatenate the list
+        history = [userText, ...history];
+        this.historyRef.current.setState({searchTexts: history});
     };
 
     onItemClick = (video) => {
@@ -53,9 +60,19 @@ class App extends React.Component{
     render(){
         return(
             <div style={{width: '90%', marginLeft: '5%', marginTop: '40px'}}>
-                <SearchBar onSearchSubmit={this.onSearchSubmit} />
-                <AdvancedSettings onSelectorChange={this.onSelectorChange}/>
-                <h4>{this.state.videos.length} videos found</h4>
+                <div style={{display: 'flex', alignItems: 'stretch', width: '100%'}}>
+                    <div style={{margin: '0', width: '60%', display: 'inline-block'}}>
+                        <SearchBar onSearchSubmit={this.onSearchSubmit} />
+                        <AdvancedSettings onSelectorChange={this.onSelectorChange}/>
+                    </div>
+
+                    <HistoryBoard onSearchSubmit={this.onSearchSubmit}
+                                  ref={this.historyRef}
+                                  style={{display: 'inline-block'}}
+                    />
+                </div>
+
+
                 <div className='ui container' style={{
                     width: '100%',
                     display: 'flex',
