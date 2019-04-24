@@ -2,24 +2,27 @@ import React from 'react';
 
 import youtube from '../../api/youtube';
 import { connect } from 'react-redux';
-import { changeSearchWord } from '../../actions'
+import { changeSearchWord, addSearchHistory, changeVideoList } from '../../actions'
 
-class SearchBar extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      userText: '',
-    };
-  }
-
+class SearchBar extends React.Component {
   render(){
     return(
       <div className='search-bar ui segment'>
         <form
           className='ui form'
           onSubmit={(event) => {
+            // do not make it empty
             event.preventDefault();
-            this.props.onSearchSubmit(this.state.userText);
+
+            // change the videolist using api request
+            youtube.get('/search', {
+              params: {
+                part: 'snippet',
+                q: this.props.searchWord,
+              }
+            }).then((response) => {
+              this.props.changeVideoList(response.data.items);
+            });
           }}>
           <div className='field'>
             <label htmlFor="search-input">Search your video here</label>
@@ -28,12 +31,13 @@ class SearchBar extends React.Component{
               id="search-input"
               value={this.props.searchWord}
               onChange={(event) => {
-                // change the videolist using api request
-                // change the search word
-                this.props.changeSearchWord(event.target.value);
+                let userText = event.target.value;
 
-                // change the search word history
-                this.props.
+                // change the search word
+                this.props.changeSearchWord(userText);
+
+                // add word to the search word history
+                this.props.addSearchHistory(userText)
               }}
             />
           </div>
@@ -51,5 +55,6 @@ const mapStateToProp = (state) => {
 
 export default connect(mapStateToProp, {
   changeSearchWord,
-  
+  addSearchHistory,
+  changeVideoList
 })(SearchBar);

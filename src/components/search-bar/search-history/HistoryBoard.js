@@ -1,52 +1,70 @@
 import React from 'react';
-import HistoryItem from './HistoryItem';
 
-export default class HistoryBoard extends React.Component{
-    state = {
-        searchTexts: ["asdf","jg"],
-    };
+import youtube from '../../../api/youtube';
+import { addSearchHistory, deleteSearchHistory, changeVideoList } from '../../../actions';
+import { connect } from 'react-redux';
 
-    key = 0;
+class HistoryBoard extends React.Component{
+  key = 0;
+  render() {
+    const HistoryItems = this.props.searchHistory.map((element) => {
+      return(
+        <div style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+        }} className="ui segment">
+          <div style={{display: "inline-block"}}>{element}</div>
+          <div style={{display: "inline-block"}}>
 
-    onItemDelete = (searchText) => {
-        let newTexts = this.state.searchTexts;
-        for(var i = 0; i < this.state.searchTexts.length; i++) {
-            if(this.state.searchTexts[i] === searchText) {
-                break;
-            }
-        }
-        newTexts.splice(i, 1);
-        this.setState({searchTexts: newTexts});
-    };
+            <button className="ui primary button"
+                    onClick={() => {
+                      youtube.get('/search', {
+                        params: {
+                          part: 'snippet',
+                          q: element,
+                        }
+                      }).then((response) => {
+                        this.props.changeVideoList(response.data.items);
+                        this.props.addSearchHistory(element);
+                      });
+                    }}>Search</button>
 
-    // call the search function of the App.js
-    // put the onSearchSubmit inside of the props
-    onItemSearch = (searchText) => {
-        this.props.onSearchSubmit(searchText);
-    };
+            <button className="ui button"
+                    onClick={() => {
+                      this.props.deleteSearchHistory(element);
+                    }
+            }>Delete</button>
+          </div>
+        </div>
+      )
+    });
 
-    render() {
-        const HistoryItems = this.state.searchTexts.map((element) => {
-            return(
-                <HistoryItem searchText={element}
-                             key={++this.key}
-                             onItemSearch={this.onItemSearch}
-                             onItemDelete={this.onItemDelete}/>
-            )
-        });
-        return(
-            <div className="ui segments"
-                 style={{
-                     overflow: "auto",
-                     marginTop: '0',
-                     width: '35%',
-                     marginLeft: '5%',
-                     maxHeight: "170px",
-                     padding: "14px"
-                 }}>
-                <h4>History</h4>
-                {HistoryItems}
-            </div>
-        )
-    }
+    return(
+      <div className="ui segments"
+        style={{
+          overflow: "auto",
+          marginTop: '0',
+          width: '35%',
+          marginLeft: '5%',
+          maxHeight: "170px",
+          padding: "14px"
+      }}>
+        <h4>History</h4>
+        {HistoryItems}
+      </div>
+    )
+  }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    searchHistory: state.searchHistory,
+  }
+};
+
+export default connect(mapStateToProps, {
+  addSearchHistory,
+  deleteSearchHistory,
+  changeVideoList,
+})(History);

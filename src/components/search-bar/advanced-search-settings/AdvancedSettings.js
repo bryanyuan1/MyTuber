@@ -7,34 +7,34 @@ import DurationSelector from './DurationSelector';
 // filters and give it back to the App.js for API
 // search
 export default class AdvancedSettings extends React.Component{
-    state = {
-        advancedOpened: false,
-    };
+  state = {
+    advancedOpened: false,
+  };
 
-    onSelectorChange = (detailType, newVal) => {
-        this.props.onSelectorChange(detailType, newVal);
-    };
+  onSelectorChange = (detailType, newVal) => {
+    this.props.onSelectorChange(detailType, newVal);
+  };
 
-    render(){
-        return(
-            <div className="ui segment">
-                <label>Advanced settings:   </label>
-                <button className="ui primary button" onClick={() => {
-                    this.setState({advancedOpened: !this.state.advancedOpened});
-                }}>{this.state.advancedOpened ? "collapse" : "expand"}</button>
-                <div style={{
-                    margin: "0",
-                    width: "100%",
-                    display: this.state.advancedOpened ? "flex" : "none",
-                    flexDirection: "row",
-                    justifyContent: "space-between",
-                    alignItems: "stretch",
-                }}>
-                    <ChannelSelector onSelectorChange={this.onSelectorChange}/>
-                    <DefinitionSelector onSelectorChange={this.onSelectorChange}/>
-                    <DurationSelector onSelectorChange={this.onSelectorChange}/>
-                </div>
-            </div>
-        );
-    }
+  render(){
+    return(
+      <div className="ui segment">
+        <label>Advanced settings:   </label>
+        <button className="ui primary button" onClick={() => {
+          this.setState({advancedOpened: !this.state.advancedOpened});
+        }}>{this.state.advancedOpened ? "collapse" : "expand"}</button>
+        <div style={{
+            margin: "0",
+            width: "100%",
+            display: this.state.advancedOpened ? "flex" : "none",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "stretch",
+        }}>
+          <ChannelSelector onSelectorChange={this.onSelectorChange}/>
+          <DefinitionSelector onSelectorChange={this.onSelectorChange}/>
+          <DurationSelector onSelectorChange={this.onSelectorChange}/>
+        </div>
+      </div>
+    );
+  }
 }

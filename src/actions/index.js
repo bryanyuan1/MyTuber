@@ -45,5 +45,13 @@ export const changeVideoDefinition = (definition) => {
 export const addSearchHistory = (searchWord) => {
   return {
     type: 'ADD_HISTORY',
+    payload: searchWord,
+  }
+}
+
+export const deleteSearchHistory = (searchWord) => {
+  return {
+    type: 'DELETE_HISTORY',
+    payload: searchWord,
   }
 }
