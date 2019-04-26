@@ -11,10 +11,6 @@ export default class AdvancedSettings extends React.Component{
     advancedOpened: false,
   };
 
-  onSelectorChange = (detailType, newVal) => {
-    this.props.onSelectorChange(detailType, newVal);
-  };
-
   render(){
     return(
       <div className="ui segment">
@@ -30,9 +26,9 @@ export default class AdvancedSettings extends React.Component{
             justifyContent: "space-between",
             alignItems: "stretch",
         }}>
-          <ChannelSelector onSelectorChange={this.onSelectorChange}/>
-          <DefinitionSelector onSelectorChange={this.onSelectorChange}/>
-          <DurationSelector onSelectorChange={this.onSelectorChange}/>
+          <ChannelSelector/>
+          <DefinitionSelector/>
+          <DurationSelector/>
         </div>
       </div>
     );
