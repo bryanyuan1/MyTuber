@@ -36,7 +36,7 @@ class DurationSelector extends React.Component{
                 type="radio" name="duration" value="long"
                 checked={this.props.videoDuration === 'long'}
                 onChange={(event) => {
-                    this.props.changeVideoDuration(event.target.value);
+                  this.props.changeVideoDuration(event.target.value);
                 }}/>
               <label>Long</label>
             </div>

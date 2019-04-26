@@ -67,4 +67,4 @@ export default connect(mapStateToProps, {
   addSearchHistory,
   deleteSearchHistory,
   changeVideoList,
-})(History);
+})(HistoryBoard);

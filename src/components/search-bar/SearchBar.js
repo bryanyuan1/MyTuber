@@ -22,6 +22,8 @@ class SearchBar extends React.Component {
               }
             }).then((response) => {
               this.props.changeVideoList(response.data.items);
+              // add word to the search word history
+              this.props.addSearchHistory(this.props.searchWord);
             });
           }}>
           <div className='field'>
@@ -35,9 +37,6 @@ class SearchBar extends React.Component {
 
                 // change the search word
                 this.props.changeSearchWord(userText);
-
-                // add word to the search word history
-                this.props.addSearchHistory(userText)
               }}
             />
           </div>
