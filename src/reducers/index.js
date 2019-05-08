@@ -63,6 +63,8 @@ export const searchHistoryReducer = (original=[], action) => {
 export default combineReducers({
 
   // the names are the name of the states and the values are the values of the reducers
+
+  // suggestion: the names should be state names for convenience.
   videoList: videoListReducer,
   selectedVideo: videoSelectReducer,
   searchWord: searchWordReducer,
