@@ -45,13 +45,15 @@ export const videoDurationReducer = (original='any', action) => {
 }
 
 export const searchHistoryReducer = (original=[], action) => {
-  if(action.type === "ADD_HISTORY") {
-    return [action.payload, ...original];
-  } else if (action.type === 'DELETE_HISTORY') {
-    // this would return a new array without the action.payload
-    return original.filter(element => element !== action.payload);
+  switch(action.type) {
+    case 'ADD_HISTORY':
+      return [action.payload, ...original];
+    case 'DELETE_HISTORY':
+      // this would return a new array without the action.payload
+      return original.filter(element => element !== action.payload);
+    default:
+      return original;
   }
-  return original;
 };
 
 export default combineReducers({
