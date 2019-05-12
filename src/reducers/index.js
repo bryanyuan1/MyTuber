@@ -48,14 +48,8 @@ export const searchHistoryReducer = (original=[], action) => {
   if(action.type === "ADD_HISTORY") {
     return [action.payload, ...original];
   } else if (action.type === 'DELETE_HISTORY') {
-    let newArr = [...original];
-    for(var i = 0; i < newArr.length; i++) {
-      if(newArr[i] === action.payload) {
-        break;
-      }
-    }
-    newArr.splice(i, 1);
-    return newArr;
+    // this would return a new array without the action.payload
+    return original.filter(element => element !== action.payload);
   }
   return original;
 };
