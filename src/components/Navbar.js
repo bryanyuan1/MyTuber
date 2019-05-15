@@ -12,8 +12,19 @@ const Navbar = () => {
       borderBottom: '1px black solid',
       backgroundColor: 'white',
       opacity: '0.9',
+      display: 'flex',
+      justifyContent: 'space-between',
     }}>
-      <h2>MyTuber</h2>
+      <h2 style={{ display: 'inline-block' }}>MyTuber</h2>
+      <div style={{ 
+        display: 'flex',
+        margin: '0',
+        width: '100px',
+        justifyContent: 'space-between'
+      }}>
+        <h3 style={{ display: 'inline-block', margin: '0' }}>Streams</h3>
+        <h3 style={{ display: 'inline-block', margin: '0' }}>Login</h3>
+      </div>
     </div>
   )
 }
