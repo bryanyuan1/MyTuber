@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './Navbar';
 import SearchBar from './search-bar/SearchBar';
 import VideoList from './video/VideoList';
 import VideoDetail from './video/VideoDetail';
@@ -9,6 +10,7 @@ class App extends React.Component{
   render(){
     return(
       <div style={{width: '90%', marginLeft: '5%', marginTop: '40px'}}>
+        <Navbar/>
         <div style={{display: 'flex', alignItems: 'stretch', width: '100%'}}>
           <div style={{margin: '0', width: '60%', display: 'inline-block'}}>
             <SearchBar/>
